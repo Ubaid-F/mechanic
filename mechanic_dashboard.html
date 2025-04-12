@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic Dashboard - City Centre Garage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">City Centre Garage</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="quotation.html">Quotation</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="mechanic_login.html">Mechanic Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Mechanic Dashboard</h2>
+            <h3>Your Schedule</h3>
+            <table id="mechanicScheduleTable">
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Customer Name</th>
+                    <th>Vehicle Type</th>
+                    <th>Service Type</th>
+                    <th>Cost (£)</th>
+                </tr>
+            </table>
+            <button onclick="localStorage.removeItem('isMechanicLoggedIn'); window.location.href='mechanic_login.html';">Logout</button>
+        </section>
+    </main>
+    <footer>
+        <p>Mon–Fri, 9 AM–6 PM | Contact: 0123 456 789</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

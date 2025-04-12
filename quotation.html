@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation - City Centre Garage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">City Centre Garage</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="quotation.html">Quotation</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Request a Quotation</h2>
+            <form id="quotationForm">
+                <label for="vehicle_type">Vehicle Type:</label>
+                <select id="vehicle_type" name="vehicle_type" required>
+                    <option value="SUV">SUV</option>
+                    <option value="Minibus">Minibus</option>
+                    <option value="Convertible">Convertible</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="service_type">Service Type:</label>
+                <select id="service_type" name="service_type" required>
+                    <option value="Minor Repair">Minor Repair</option>
+                    <option value="Major Repair">Major Repair</option>
+                    <option value="General Service">General Service</option>
+                    <option value="Health Check">Health Check</option>
+                    <option value="MOT">MOT</option>
+                </select>
+                <label for="mot_expiry">MOT Expiry Date (if applicable):</label>
+                <input type="date" id="mot_expiry" name="mot_expiry">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" class="btn">Get Quotation</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Mon–Fri, 9 AM–6 PM | Contact: 0123 456 789</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
